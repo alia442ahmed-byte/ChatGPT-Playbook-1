@@ -10,16 +10,16 @@
 
 <style>
 :root {
-  --bg:      #07091c;
-  --card:    #101726;
-  --orange:  #ff560a;
-  --orange2: #ff7d42;
-  --gold:    #e8a800;
-  --gold2:   #ffd060;
-  --text:    #eef2ff;
-  --muted:   #8a9bbf;
-  --border:  rgba(255,255,255,0.07);
-  --glow-o:  0 0 48px rgba(255,86,10,0.18);
+  --bg:      #080808;
+  --card:    #141414;
+  --orange:  #E61933;
+  --orange2: #FF3352;
+  --gold:    #FFD60A;
+  --gold2:   #FFE55C;
+  --text:    #F5F5F5;
+  --muted:   rgba(245,245,245,0.55);
+  --border:  rgba(245,245,245,0.07);
+  --glow-o:  0 0 48px rgba(230,25,51,0.18);
 }
 
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
@@ -38,9 +38,9 @@ body::before {
   content: '';
   position: fixed; inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 15% 10%, rgba(255,86,10,0.07) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 85% 90%, rgba(232,168,0,0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(30,50,120,0.12) 0%, transparent 70%);
+    radial-gradient(ellipse 80% 50% at 15% 10%, rgba(230,25,51,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 90%, rgba(255,214,10,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(0,0,0,0) 0%, transparent 70%);
   pointer-events: none; z-index: 0;
 }
 
@@ -54,7 +54,7 @@ body::before {
 
 .divider {
   height:1px;
-  background:linear-gradient(to right, transparent, rgba(255,86,10,0.25), transparent);
+  background:linear-gradient(to right, transparent, rgba(230,25,51,0.25), transparent);
   margin:48px 0;
 }
 .grad-text {
@@ -68,7 +68,7 @@ body::before {
 
 .hero-badge {
   display:inline-flex; align-items:center; gap:8px;
-  background:rgba(255,86,10,0.10); border:1px solid rgba(255,86,10,0.28);
+  background:rgba(230,25,51,0.10); border:1px solid rgba(230,25,51,0.28);
   border-radius:100px; padding:6px 18px; margin-bottom:36px;
   font-size:12px; font-weight:700; letter-spacing:.08em;
   text-transform:uppercase; color:var(--orange2);
@@ -94,8 +94,8 @@ body::before {
 .video-wrap {
   position:relative; max-width:680px; margin:48px auto 0;
   border-radius:18px; overflow:hidden;
-  border:1px solid rgba(255,86,10,0.22);
-  box-shadow: 0 0 60px rgba(255,86,10,0.16), 0 30px 80px rgba(0,0,0,0.5);
+  border:1px solid rgba(230,25,51,0.22);
+  box-shadow: 0 0 60px rgba(230,25,51,0.16), 0 30px 80px rgba(0,0,0,0.5);
 }
 
 /* ─── SECTION / MOVE HEADER ─── */
@@ -120,14 +120,14 @@ body::before {
   background:var(--card); border:1px solid var(--border); border-radius:14px;
 }
 .f-box {
-  background:rgba(255,255,255,0.03); border:1px solid rgba(255,86,10,0.18);
+  background:rgba(255,255,255,0.03); border:1px solid rgba(230,25,51,0.18);
   border-radius:8px; padding:8px 14px; font-size:13px; font-weight:500; color:var(--text);
 }
 .f-arr { color:var(--orange); font-size:16px; }
 
 /* ─── PROMPT (paste actions) ─── */
 .prompt {
-  background:#050810; border:1px solid rgba(255,86,10,0.2);
+  background:#0a0a0a; border:1px solid rgba(230,25,51,0.2);
   border-radius:14px; padding:22px 24px; margin-top:8px;
 }
 .p-label {
@@ -137,10 +137,10 @@ body::before {
 }
 .p-text {
   font-family:'Courier New', monospace; font-size:13px;
-  line-height:1.85; color:#7dd3fc; white-space:pre-wrap;
+  line-height:1.85; color:rgba(245,245,245,0.80); white-space:pre-wrap;
 }
 .copy-btn {
-  background:transparent; border:1px solid rgba(255,86,10,0.45);
+  background:transparent; border:1px solid rgba(230,25,51,0.45);
   border-radius:5px; color:var(--orange2);
   font-family:'DM Sans',sans-serif; font-size:11.5px; font-weight:600;
   padding:4px 12px; cursor:pointer; transition:background .15s,color .15s;
@@ -168,7 +168,7 @@ body::before {
   flex:1; min-width:170px; text-align:center;
   padding:13px 18px; border-radius:8px;
   font-size:13.5px; font-weight:600; text-decoration:none;
-  border:1px solid rgba(255,86,10,0.35); color:var(--orange2);
+  border:1px solid rgba(230,25,51,0.35); color:var(--orange2);
   transition:background .15s, color .15s;
 }
 .nav-btn:hover { background:var(--orange); color:#000; }
@@ -181,7 +181,7 @@ body::before {
   display:inline-flex; align-items:center; gap:8px;
   padding:10px 16px; margin:28px 0 0 0;
   border-radius:8px; font-size:13px; font-weight:600;
-  text-decoration:none; border:1px solid rgba(255,86,10,0.3);
+  text-decoration:none; border:1px solid rgba(230,25,51,0.3);
   color:var(--orange2); transition:all .2s;
 }
 .home-btn:hover { background:var(--orange); color:#000; border-color:transparent; transform:translateY(-2px); }
@@ -189,7 +189,7 @@ body::before {
 footer {
   text-align:center; padding:28px 24px 44px;
   font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
-  color:rgba(255,255,255,0.18);
+  color:rgba(245,245,245,0.30);
 }
 
 .reveal { opacity:0; transform:translateY(20px); transition:opacity .55s ease, transform .55s ease; }
@@ -209,7 +209,7 @@ footer {
 
 <div class="wrap">
 
-<a href="https://ai-playbook-series.aliaahmed.com/" class="home-btn">← Back to Home</a>
+<a href="../index.html" class="home-btn">← Back to Home</a>
 
 <!-- HERO -->
 <div class="hero reveal">
@@ -227,7 +227,7 @@ footer {
   <div style="position:relative;cursor:pointer;line-height:0;" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/0tLHVyd7WtM?autoplay=1\' style=\'width:100%;aspect-ratio:16/9;display:block;border:none;\' allow=\'autoplay;encrypted-media\' allowfullscreen></iframe>'">
     <img src="https://img.youtube.com/vi/0tLHVyd7WtM/maxresdefault.jpg" style="width:100%;aspect-ratio:16/9;object-fit:cover;display:block;" alt="Watch the video">
     <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.35);">
-      <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#ff560a,#e8a800);display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px rgba(255,86,10,0.5);">
+      <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#E61933,#FFD60A);display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px rgba(230,25,51,0.5);">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="#000"><path d="M8 5v14l11-7z"/></svg>
       </div>
     </div>
@@ -371,8 +371,8 @@ Once I've answered everything, write it into one clean document I can save and r
   <p>Pick one. Paste it. You'll know in ten seconds if it's worth your time.</p>
 
   <div class="nav-buttons">
-    <a href="https://ai-playbook-series.aliaahmed.com/" class="nav-btn">🏠 Back to Home</a>
-    <a href="https://ai-playbook-series.aliaahmed.com/codex-playbook-2/codex" class="nav-btn">Codex Playbook →</a>
+    <a href="../index.html" class="nav-btn">🏠 Back to Home</a>
+    <a href="../Codex-Playbook-2 & 3/codex.html" class="nav-btn">Codex Playbook →</a>
   </div>
 
   <p class="contact-line">Questions? Want more of this? <a href="https://www.linkedin.com/in/alia-ahmed-sdev-ai/">Follow me on LinkedIn</a> or send a DM.</p>
